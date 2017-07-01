@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:id="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Questions Completed - 0"
+        android:textSize="20dp"
+        android:id="@+id/Score"
+        android:layout_toRightOf="@+id/MenuButton"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Challenge Questions"
+        android:textSize="35dp"
+        android:id="@+id/ChallengeNum"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:id="@+id/Question"
+        android:layout_below="@+id/ChallengeNum"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra Information"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:id="@+id/Information"
+        android:layout_below="@+id/Question"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Answer"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:id="@+id/Answer"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/Information"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AnswerBox"
+        android:layout_marginLeft="20dp"
+        android:width="200dp"
+        android:layout_alignTop="@+id/Answer"
+        android:layout_toRightOf="@+id/Answer"
+        android:layout_toEndOf="@+id/Answer" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:id="@+id/checkButton"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/AnswerBox"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Question"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:id="@+id/NewQuestion"
+        android:layout_below="@+id/checkButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+
+</RelativeLayout>

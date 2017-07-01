@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dcipher"
+        android:id="@+id/topLabel"
+        android:layout_gravity="center_horizontal"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ciphers"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:id="@+id/CipherTV"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CiphersLayout"
+                android:layout_below="@+id/CipherTV"
+                android:layout_centerHorizontal="true">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caesar Cipher"
+                    android:id="@+id/CaesarButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verham / One Time Pad"
+                    android:id="@+id/VerhamButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rail Fence Cipher"
+                    android:id="@+id/railFenceButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Vigenere Cipher"
+                    android:id="@+id/VigenereCipher"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Challenges"
+                android:textSize="30dp"
+                android:textColor="#000000"
+                android:id="@+id/ChallengesTV"
+                android:layout_below="@id/CiphersLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Challenge Question"
+                android:id="@+id/ChallengeQuestion"
+                android:layout_below="@+id/ChallengesTV"
+                android:layout_centerHorizontal="true"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email Encryption"
+                android:id="@+id/EmailCryButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/ChallengeQuestion"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credits: Mark, Ben, Joe, Baba's"
+                android:textSize="20dp"
+                android:id="@+id/textView"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/EmailCryButton"
+                />
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
